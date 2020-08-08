@@ -10,6 +10,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.sun.jdi.PathSearchingVirtualMachine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.lvjp.common.Data;
 
 import java.security.Key;
 import java.time.Duration;
@@ -112,37 +113,6 @@ public class CacheTest {
 
     public static void main(String[] args) {
 
-    }
-
-    // >>>>>>>>>>>>>>>>   用于测试的数据类   <<<<<<<<<<<<<<<
-
-    private static class Data {
-        private Integer id;
-        private String value;
-
-        public Data() {
-        }
-
-        public Data(Integer id, String value) {
-            this.id = id;
-            this.value = value;
-        }
-
-        public Integer getId() {
-            return id;
-        }
-
-        public void setId(Integer id) {
-            this.id = id;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-        public void setValue(String value) {
-            this.value = value;
-        }
     }
 }
 
